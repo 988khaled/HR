@@ -12,9 +12,11 @@ interface Department {
 
 interface DepartmentsTableProps {
   departments: Department[];
+  onEdit: (department: Department) => void;
+  onDelete: (departmentId: number) => void;
 }
 
-export default function DepartmentsTable({ departments }: DepartmentsTableProps) {
+export default function DepartmentsTable({ departments, onEdit, onDelete }: DepartmentsTableProps) {
   if (departments.length === 0) {
     return (
       <div className="flex h-40 items-center justify-center rounded-lg border border-dashed border-gray-300 bg-white">
@@ -46,13 +48,13 @@ export default function DepartmentsTable({ departments }: DepartmentsTableProps)
                 <div className="flex items-center gap-2">
                   <button
                     className="rounded p-1 text-blue-600 hover:bg-blue-50"
-                    onClick={() => {}}
+                    onClick={() => onEdit(department)}
                   >
                     <Edit className="h-4 w-4" />
                   </button>
                   <button
                     className="rounded p-1 text-red-600 hover:bg-red-50"
-                    onClick={() => {}}
+                    onClick={() => onDelete(department.id)}
                   >
                     <Trash2 className="h-4 w-4" />
                   </button>
