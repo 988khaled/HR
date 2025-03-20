@@ -1,22 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HR Management System
+
+A comprehensive HR management system built with Next.js and TypeScript.
+
+## Features
+
+- Employee Management
+- Department Management
+- Attendance Tracking
+- Payroll Management
+- Leave Management
+- Performance Reviews
+- Reports and Analytics
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Deployment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is deployed on GitHub Pages at: https://988khaled.github.io/HR
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Last updated: 2024-03-19
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
